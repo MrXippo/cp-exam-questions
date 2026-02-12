@@ -1,0 +1,17 @@
+With any assignment: get the assignment description in the editor by clicking on Assignment Description.
+
+The exam consists of the following assignments:
+
+    CONTENTS (1 point)
+    Integer factorization (8 points)
+    Debugging vector reverse (8 points)
+    Exceptions for quadratic formula (8 points)
+    Theory Quiz (12 points)
+
+The total number of points possible in this exam is 37. Achieving 18 points will be sufficient to get a passing grade.
+
+For the three programming assignments, the points achieved become visible immediately. For the two quizzes, the points achieved are not visible during the exam.
+
+Options:
+1. [Correct] I have read and understood which assignments are part of this exam and how many points can be gained with each of them.
+2. Huh?

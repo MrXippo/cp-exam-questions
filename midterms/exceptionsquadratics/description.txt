@@ -1,0 +1,31 @@
+Preliminaries:
+
+This assignment is good for 8 points max.
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+From within the editor, you can "Run" the tests. This does exactly the same as when handing in. (see below) Once you "Hand in", the points you earn for this assignment will be determined by unmodified (original) copies of the tester programs.
+
+Your code must be added into the files:
+
+    qfunctions.cpp
+    qrun.cpp
+
+All other files are only informative to you (so you can see how your code is called). The file zzzbackup.cpp contains a backup copy of qfunctions.cpp and qrun.cpp, in case you accidentally damage their contents.
+
+The style check is testing for the following, undesired constructs:
+
+    using namespace std
+    auto
+
+Your Assignment:
+
+In this assignment, you add error handling to a program solving the quadratic formula, as you know it from assignment W2. Here, you need no knowledge about the quadratic formula itself. This assignment is purely about exceptions, in combination with functions and input streams.
+
+    In qfunctions.cpp, modify the function applyQuadraticFormula() such that it throws the specified exception in case the parameter a equals 0.0.
+        This is tested using (an unmodified copy of) testformula.cpp
+    In qfunctions.cpp, modify the function readDoubleFromStream() such that it throws the specified exception in case reading from the input stream failed.
+        This is tested using (an unmodified copy of) testread.cpp
+    In qrun.cpp, modify the function solveQuadraticFormula() such that it handles (catches) the exceptions thrown by applyQuadraticFormula() and readDoubleFromStream(). While handling these exceptions, an error message should be printed. In any case, solveQuadraticFormula() must return 0.
+        This is tested using unmodified copies of testrun.cpp and quadratic-errors.cpp, in combination with a version of qfunctions.cpp that correctly throws the specified exceptions.
+

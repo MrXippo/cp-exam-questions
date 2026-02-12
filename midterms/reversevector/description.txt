@@ -1,0 +1,22 @@
+Preliminaries:
+
+This assignment is good for 8 points max.
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+From within the editor, you can "Run" the tests. These tests use the program tester.cpp. Feel free to modify this program for your own testing purposes.
+
+Once you "Hand in", the points you earn for this assignment will be determined by an unmodified (original) copy of this tester.
+
+The style check is testing for the following, undesired constructs:
+
+    using namespace std
+    the [] operator on vectors
+    iterators on vectors
+    auto
+
+Your Assignment:
+
+The file reverse.h contains an implementation of a function that reverses the elements of a vector. Unfortunately, the function is broken.
+
+Your task is to analyse the function, find out what is wrong and make it work.
