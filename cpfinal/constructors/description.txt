@@ -1,0 +1,23 @@
+Preliminaries:
+This assignment is good for 8 points max. (two parts, 4 + 4 points each)
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+Do your own testing:
+From within the editor, you can "Run" the tests. These tests use the programs testcopycons.cpp and testcopyassign.cpp. Feel free to modify these two programs for your own testing purposes.
+
+Handing in:
+Once you "Hand in", the points you earn for this assignment will be determined by unmodified (original) copies of these tests.
+
+Backup for assignment files:
+Whenever you "Hand in" from the editor, "backup" copies of the (original) assignment files will be added to the "AutoTest output" (on the right of the screen). You can copy-paste from there.
+
+Your Assignment:
+You are given an implementation of a DIYVector class, that internally allocates an array of int of the desired size. The file diyvector.h contains the class definition. In diyvector.cpp, there is the implementation of the class, except for copy constructor and copy assignment operator. Modifying these two files will have no effect on the outcome of the program tests.
+
+Your tasks:
+
+In the file copycons.cpp, implement the copy constructor, according to its interface definition in diyvector.h.
+In the file assign.cpp, implement the copy assignment operator, according to its interface definition in diyvector.h.
+(These two functions are in separate files so a mistake in one of them will not harm the outcome of the other.)
+

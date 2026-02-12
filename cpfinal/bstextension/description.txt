@@ -1,0 +1,22 @@
+Preliminaries:
+This assignment is good for 8 points max. (two parts, 4 + 4 points each)
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+Do your own testing:
+From within the editor, you can "Run" the tests. These tests use the programs testCount.cpp and testLargest.cpp. Feel free to modify these two programs for your own testing purposes.
+
+Handing in:
+Once you "Hand in", the points you earn for this assignment will be determined by unmodified (original) copies of these tests.
+
+Backup for assignment files:
+Whenever you "Hand in" from the editor, "backup" copies of the (original) assignment files will be added to the "AutoTest output" (on the right of the screen). You can copy-paste from there.
+
+Your Assignment:
+You will see two header files, namely bstCount.h and bstLargest.h. They are two identical copies of each other. You are supposed to use the respective file for the function you are going to implement. (This setup separates your codes, so a mistake in one of them will not harm the other one.)
+
+In the header files, you find a correctly working implementation of a binary search tree (BST) that stores key-value pairs, with keys being of type int and values are std::string. Your task is to add functionality for two of its interface functions, as follows: (All details are in the header files.)
+
+count() (4 points) Implement this function such that it returns the number of key-value pairs stored in the BST.
+
+largestKey() (4 points) Implement this function such that it returns the largest key stored in the BST, or throws the prescribed exception if the BST is empty.

@@ -1,0 +1,31 @@
+Preliminaries:
+This assignment is good for 6 points.
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+Do your own testing:
+From within the editor, you can "Run" the tests. These tests use the program indexsearch.cpp. Feel free to modify this program for your own testing purposes. If you write test output to std::cerr rather than to std::cout, it will not interfere with the functionality tests.
+
+Handing in:
+Once you "Hand in", the points you earn for this assignment will be determined by unmodified (original) copies of this test.
+
+Backup for assignment files:
+Whenever you "Hand in" from the editor, "backup" copies of the (original) assignment files will be added to the "AutoTest output" (on the right of the screen). You can copy-paste from there.
+
+Your assignment:
+In the template file binarysearch.h, you find a function with the following interface:
+
+int binarySearch(const std::vector<int>& v, int minIndex, int maxIndex, int searchValue)
+
+This function gets a sorted vector v (smallest value at the lowest index). It returns an int value, with the index of searchValue in the vector. The function returns -1 if searchValue is not present in the vector. The search is performed in the index range from minIndex to maxIndex (both inclusive).
+
+In the given file, the function is implementing a simple-minded, linear search. This is too slow, esp. with large vectors. Your task is to replace this linear search with a recursive implementation of the binary search algorithm. Your solution should work according to the following pseudo code:
+
+If the vector range is empty (maxIndex < minIndex) return -1.
+midIndex is the "middle index" in between minIndex and maxIndex
+if searchValue is present at midIndex, return midIndex
+if searchValue is smaller than the value at midIndex, return binarySearch() for the index range "left of" midIndex
+otherwise return binarySearch() for the index range "right of" midIndex
+Our automatic tests check for the improvement in speed. Also, the presence of recursive calls inside binarySearch() is being checked automatically.
+
+Your solution must be recursive, otherwise the automatic tests will fail.

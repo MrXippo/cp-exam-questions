@@ -1,0 +1,29 @@
+Preliminaries:
+This assignment is good for 4 points max. (two parts, 2 + 2 points each)
+
+Do not forget to "Hand in" your code from within the code editor. You can hand in as often as you wish. Only the latest, handed-in version can be graded.
+
+Do your own testing:
+From within the editor, you can "Run" the tests. These tests use the programs testrotate.cpp and testmax.cpp. Feel free to modify these two programs for your own testing purposes. If you write test output to std::cerr rather than to std::cout, it will not interfere with the functionality tests.
+
+Handing in:
+Once you "Hand in", the points you earn for this assignment will be determined by unmodified (original) copies of these tests.
+
+Backup for assignment files:
+Whenever you "Hand in" from the editor, "backup" copies of the (original) assignment files will be added to the "AutoTest output" (on the right of the screen). You can copy-paste from there.
+
+Your Assignment:
+Implement two template functions as follows:
+
+In the file templaterotate.h, implement
+
+rotateRight(a,b,c) (2 points)
+
+This function assigns the value of a to b, the value of b to c, and the value of c to a.
+
+In the file templatemax.h, implement
+
+max(a,b,c) (2 points)
+
+This function returns the biggest of the three values of a, b, and c. The catch: this function must also work for types that can be compared exclusively via the < operator. Read: use only the < operator, otherwise it will not work.
+
